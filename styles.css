@@ -1,0 +1,248 @@
+/* Variables */
+:root {
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --muted: #64748b;
+    --accent: #3b82f6;
+    --glass: rgba(59, 130, 246, 0.05);
+}
+
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, system-ui, sans-serif;
+    background: var(--bg);
+    color: #1e293b;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Layout */
+.site {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    background: var(--card);
+    box-shadow: 0 6px 30px rgba(15, 23, 42, 0.1);
+    border-radius: 14px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background: var(--bg);
+    padding: 32px 24px;
+    border-right: 1px solid rgba(0,0,0,0.05);
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.brand .name {
+    font-weight: 600;
+}
+
+.brand .title {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(135deg,var(--accent),#3b82f6);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(124,58,237,0.15);
+    color: white;
+    margin-bottom: 4px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    color: var(--accent);
+    background: var(--glass);
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    min-height: 100vh;
+}
+
+/* Contact links */
+.contact-links {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 8px 12px;
+    background: var(--glass);
+    border-radius: 8px;
+    color: inherit;
+}
+
+.contact-link .label {
+    font-weight: 500;
+    color: var(--accent);
+}
+
+.contact-link .value {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* Introduction section */
+.intro {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.intro .info {
+    flex: 1;
+}
+
+h1 {
+    margin: 0 0 6px 0;
+    font-size: 28px;
+}
+
+.lead {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+/* Project cards */
+.page-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.card {
+    background: var(--card);
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.05);
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover {
+    background: var(--glass);
+}
+
+.card-description {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.btn {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.05);
+    background: var(--glass);
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn.primary {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(59,130,246,0.12);
+}
+
+.experience-title {
+    font-weight: 600;
+    margin: 0 0 6px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    font-size: 13px;
+    color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+    
+    .site {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        padding: 24px;
+    }
+    
+    .brand {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    nav {
+        flex-direction: row;
+        gap: 8px;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
