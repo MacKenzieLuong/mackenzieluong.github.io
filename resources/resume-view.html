@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacKenzie's Resume</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        main {
+            padding: 1rem;
+            height: auto;
+            overflow: visible;
+        }
+        .resume-container {
+            width: 100%;
+            margin: 0;
+        }
+        .resume-frame {
+            width: 100%;
+            min-height: 1100px; /* Typical height for a letter-size PDF */
+            height: auto;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 0.5rem;
+            background: white;
+        }
+        .site {
+            height: auto;
+            min-height: 100vh;
+        }
+        footer {
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="site">
+        <div class="sidebar">
+            <div class="brand">
+                <div class="logo" aria-hidden="true">ML</div>
+                <div>
+                    <div class="name">MacKenzie Luong</div>
+                    <div class="title">Currently SDE Intern @ INVIDI</div>
+                </div>
+            </div>
+            <nav aria-label="Main navigation">
+                <a href="/">Home</a>
+                <a href="/experience/home.html">Experience</a>
+                <a href="/software-dev/home.html">Software</a>
+                <a href="/design-portfolio/home.html">Design</a>
+                <a href="/resources/resume-view.html">Resume</a>
+            </nav>
+        </div>
+
+        <main>
+            <div class="banner">
+                <h1>Resume</h1>
+                <p class="lead">Everything summarized!</p>
+            </div>
+
+            <div class="resume-container">
+                <iframe src="MacKenzie_Luong_Resume.pdf" class="resume-frame" title="Resume Preview"></iframe>
+            </div>
+
+            <footer>
+               Hopefully that wasn't too much reading!
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
