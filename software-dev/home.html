@@ -4,35 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mack can code!</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/modern/modern.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="site" role="main">
+    <button class="sidebar-toggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
+    
+    <div class="site">
         <div class="sidebar">
-            <div class="brand">
-                <div class="logo" aria-hidden="true">ML</div>
-                <div>
-                    <div class="name">MacKenzie Luong</div>
-                    <div class="title">Currently SDE Intern @ INVIDI</div>
-                </div>
-            </div>
+            <div class="brand">MacKenzie Luong</div>
             <nav aria-label="Main navigation">
-                <a href="/">Home</a>
-                <a href="/experience/home.html">Experience</a>
-                <a href="/software-dev/home.html">Software</a>
-                <a href="/design-portfolio/home.html">Design</a>
-                <a href="/resources/resume-view.html">Resume</a>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/experience/home.html" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="/software-dev/home.html" class="nav-link">Software</a></li>
+                    <li class="nav-item"><a href="/design-portfolio/home.html" class="nav-link">Design</a></li>
+                    <li class="nav-item"><a href="/resources/resume-view.html" class="nav-link">Resume</a></li>
+                </ul>
             </nav>
         </div>
 
-        <main>
-            <div class="banner">
-                <h1>Software Projects</h1>
-                <p class="lead">A collection of what I'm proud of.</p>
-            </div>
-
-            <div class="intro-section">
-                <p>Some projects I've worked on! You can look at a more summarized view on my <a href="/resources/resume-view.html" style="color: inherit; text-decoration: underline;">resume</a>.</p>
+        <main class="main-content">
+            <div class="mini-hero">
+                <div class="mini-hero-text">
+                    <h1 class="banner-title">Software Projects</h1>
+                    <p class="lead">A collection of what I'm proud of.</p>
+                    <p class="mini-hero-description">
+                        Some projects I've worked on! You can look at a more summarized view on my <a href="/resources/resume-view.html">resume</a>.
+                    </p>
+                </div>
+                <div class="mini-hero-image">
+                    <img src="/images/personalpage_software_image.png" alt="Software Projects">
+                </div>
             </div>
 
             <div class="content-grid">
@@ -83,7 +94,25 @@
     </div>
 
     <script>
-        //TO DO: possible animation?
+        // Intersection Observer for card animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all content cards
+        document.querySelectorAll('.content-card').forEach(card => {
+            observer.observe(card);
+        });
     </script>
 </body>
 </html>

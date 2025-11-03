@@ -1,84 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Mack's Website</title>
-    <meta name="description" content="A website detailing MacKenzie Luong, a student learning to be a developer and a designer!" />
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacKenzie Luong - Software Developer & Designer</title>
+    <meta name="description" content="MacKenzie Luong - Software Developer + Designer specializing in creating delightful digital experiences" />
+    <link rel="stylesheet" href="styles/modern/modern.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="site" role="main">
+    <button class="sidebar-toggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
+    
+    <div class="site">
         <div class="sidebar">
-            <div class="brand">
-                <div class="logo" aria-hidden="true">ML</div>
-                <div>
-                    <div class="name">MacKenzie Luong</div>
-                    <div class="title">Currently SDE Intern @ INVIDI</div>
-                </div>
-            </div>
+            <div class="brand">MacKenzie Luong</div>
             <nav aria-label="Main navigation">
-                <a href="/">Home</a>
-                <a href="/experience/home.html">Experience</a>
-                <a href="/software-dev/home.html">Software</a>
-                <a href="/design-portfolio/home.html">Design</a>
-                <a href="/resources/resume-view.html">Resume</a>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/experience/home.html" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="/software-dev/home.html" class="nav-link">Software</a></li>
+                    <li class="nav-item"><a href="/design-portfolio/home.html" class="nav-link">Design</a></li>
+                    <li class="nav-item"><a href="/resources/resume-view.html" class="nav-link">Resume</a></li>
+                </ul>
             </nav>
         </div>
 
-        <main>
-            <div class="banner">
-                <h1>Welcome to Mack's World!</h1>
-                <p class="lead">Still in exploration, looking for some juice for this site!</p>
-            </div>
-            <section class="intro">
-                <div class="info">
-                    <h1>Hello hello! I'm Mackenzie!</h1>
-                    <p class="lead">Currently a third year Computing Science Student at the University of Alberta, passionate about full stack software development, game development, and UI/UX Design!</p>
-                    
-                    <div class="contact-links">
-                        <a href="mailto:mackenz3@ualberta.ca" class="contact-link">
-                            <span class="label">Email</span>
-                            <span class="value">mackenz3@ualberta.ca</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/mackenzie-luong" target="_blank" class="contact-link">
-                            <span class="label">LinkedIn</span>
-                            <span class="value">@mackenzie-luong</span>
-                        </a>
-                        <a href="https://github.com/MacKenzieLuong" target="_blank" class="contact-link">
-                            <span class="label">GitHub</span>
-                            <span class="value">@MacKenzieLuong</span>
-                        </a>
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero-text fade-in">
+                    <h1 class="hero-heading">Hello! I'm Mack 👋</h1>
+                    <p class="hero-subheading">I'm a <span class="rotating-text">software developer</span> looking to contribute to something huge!</p>
+                    <p class="hero-description">
+                        I'm a Computing Science student at the University of Alberta, passionate about full stack development, game development, and UI/UX design.
+                    </p>
+                </div>
+                <div class="model-container fade-in">
+                    <!-- 3D Model will be rendered here -->
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-text">Scroll to explore</div>
+                    <div class="scroll-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
                     </div>
                 </div>
             </section>
 
-            <div class="page-nav">
-                <a href="/experience/home.html" class="card">
-                    <div class="experience-title">Experience</div>
-                    <div class="card-description">Know more about where I contributed before!</div>
-                </a>
+            <section class="work-preview">
+                <div class="section-grid fade-in">
+                    <a href="/experience/home.html" class="card sketch-box">
+                        <div class="experience-title">Experience</div>
+                        <div class="card-description">Know more about where I contributed before!</div>
+                    </a>
 
-                <a href="/software-dev/home.html" class="card">
-                    <div class="experience-title">Developer Work</div>
-                    <div class="card-description">Explore my software development projects and fun games!</div>
-                </a>
+                    <a href="/software-dev/home.html" class="card sketch-box">
+                        <div class="experience-title">Developer Work</div>
+                        <div class="card-description">Explore my software development projects and fun games!</div>
+                    </a>
 
-                <a href="/design-portfolio/home.html" class="card">
-                    <div class="experience-title">UI Portfolio</div>
-                    <div class="card-description">Browse my UI design work and creative projects!</div>
-                </a>
-            </div>
+                    <a href="/design-portfolio/home.html" class="card sketch-box">
+                        <div class="experience-title">UI Portfolio</div>
+                        <div class="card-description">Browse my UI design work and creative projects!</div>
+                    </a>
+                </div>
+            </section>
 
-            <footer>
-                <!-- © <span id="year"></span> MacKenzie Luong -->
-                 If you're reading this, hope you're having a great day! :)
+            <section class="contact-section">
+                <div class="contact-links fade-in">
+                    <a href="mailto:mackenz3@ualberta.ca" class="contact-link sketch-box">
+                        <span class="label">Email</span>
+                        <span class="value">mackenz3@ualberta.ca</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mackenzie-luong" target="_blank" class="contact-link sketch-box">
+                        <span class="label">LinkedIn</span>
+                        <span class="value">@mackenzie-luong</span>
+                    </a>
+                    <a href="https://github.com/MacKenzieLuong" target="_blank" class="contact-link sketch-box">
+                        <span class="label">GitHub</span>
+                        <span class="value">@MacKenzieLuong</span>
+                    </a>
+                </div>
+            </section>
+
+            <footer class="footer fade-in">
+                <p>© <span id="year"></span> MacKenzie Luong • Have a great day! ✨</p>
             </footer>
         </main>
     </div>
 
+    <script type="module" src="scripts/main.js"></script>
     <script>
-        // document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Rotating text animation
+        const roles = [
+            'software developer',
+            'project manager',
+            'UX designer',
+            'game developer',
+            'full-stack developer',
+            'creative problem solver'
+        ];
+        
+        let currentIndex = 0;
+        const rotatingTextElement = document.querySelector('.rotating-text');
+        
+        if (rotatingTextElement) {
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % roles.length;
+                rotatingTextElement.style.animation = 'none';
+                setTimeout(() => {
+                    rotatingTextElement.textContent = roles[currentIndex];
+                    rotatingTextElement.style.animation = 'fadeText 0.5s ease-in-out';
+                }, 50);
+            }, 3000); // Change every 3 seconds
+        }
     </script>
 </body>
 </html>
