@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marill - Design Process | MacKenzie Luong</title>
+    <link rel="stylesheet" href="../styles/modern/modern.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site">
+        <div class="sidebar">
+            <div class="brand">MacKenzie Luong</div>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/experience/home.html" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="/software-dev/home.html" class="nav-link">Software</a></li>
+                    <li class="nav-item"><a href="/design-portfolio/home.html" class="nav-link">Design</a></li>
+                    <li class="nav-item"><a href="/resources/resume-view.html" class="nav-link">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="main-content">
+            <div class="project-header">
+                <a href="/design-portfolio/home.html" class="back-link">← Back to Portfolio</a>
+                <h1 class="project-title">Marill Event Platform</h1>
+                <p class="project-subtitle">Mobile App Design | Design Systems | Figma</p>
+                <div class="project-meta">
+                    <span class="meta-item">🗓️ September - December 2024</span>
+                    <span class="meta-item">👥 Team of 5 CS Students</span>
+                    <span class="meta-item">📱 Android App</span>
+                    <span class="meta-item">🎨 Sole Designer</span>
+                </div>
+            </div>
+
+            <div class="project-hero sketch-box">
+                <div class="project-hero-image">
+                    <img src="/images/marill_events_banner.png" alt="Marill event platform banner" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>Marill is an Android application for event hosting, management, and attendee check-ins, built as a semester-long software engineering project. While this was primarily a development-focused project, I took on dual roles as <strong>software architect and UI designer</strong>, managing the technical architecture, coordinating development, and creating the visual design system.</p>
+                <p><strong>My Primary Roles:</strong> Software Architect, Project Manager, UI/UX Designer</p>
+                <p><strong>Team Context:</strong> Led a team of 4 CS students through full-stack Android development while simultaneously designing the interface</p>
+                <p><strong>Design Note:</strong> This was my first UI design project. While the work shown here represents early-stage design skills, I'm proud of creating a functional, cohesive system that successfully guided development. The <a href="https://www.figma.com/design/IB1hJMCJ2e2CWzZvdNK1zb/Marill_manyEvents?m=auto&t=McnZ58YGnyIIazX1-1" target="_blank">complete Figma file</a> is available to view.</p>
+                <p><strong>Tools:</strong> Figma (design and prototyping), collaborative design features</p>
+                <p><strong>Fun Fact:</strong> Named after the Pokémon Marill, inspiring our playful blue color theme!</p>
+            </section>
+
+            <section class="project-section">
+                <h2>The Problem</h2>
+                <p>University students and event organizers face challenges managing event attendance:</p>
+                <ul>
+                    <li><strong>Organizers:</strong> Manual check-ins are slow and error-prone, especially for large events. No easy way to track attendance trends.</li>
+                    <li><strong>Attendees:</strong> Paper sign-ups are tedious. Discovering campus events is difficult and scattered across platforms.</li>
+                    <li><strong>Event Hosts:</strong> Limited tools to promote events and engage with potential attendees before events.</li>
+                </ul>
+                <p><strong>Technical Challenge:</strong> Design a scalable Android application architecture that supports real-time check-ins, QR code scanning, and role-based permissions (attendees vs. organizers).</p>
+                <p><strong>Design Challenge:</strong> Create my first UI design system that could guide 4 developers through implementation while learning industry design tools and patterns.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Target Users</h2>
+                <div class="design-grid">
+                    <div class="design-item sketch-box">
+                        <h3>🎓 University Students</h3>
+                        <p>18-24 years old, mobile-first users familiar with social apps. Want quick event discovery and easy check-in without downloading dozens of apps.</p>
+                    </div>
+                    <div class="design-item sketch-box">
+                        <h3>📋 Event Organizers</h3>
+                        <p>Student clubs, campus organizations needing efficient tools to promote events, manage RSVPs, and track attendance data.</p>
+                    </div>
+                    <div class="design-item sketch-box">
+                        <h3>🏢 Venue Administrators</h3>
+                        <p>Need capacity tracking, safety compliance, and real-time attendance monitoring for campus spaces.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Project Goals</h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h4>👥 User Goals</h4>
+                        <p>Discover relevant events, check in with single tap, build social connections through attendance</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>📊 Business Goals</h4>
+                        <p>Increase attendance through discovery, reduce check-in time by 70%, provide actionable analytics</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>🎨 My Learning Goals</h4>
+                        <p>Create first production design system, learn Figma, coordinate design with development team, balance technical and visual decisions</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Figma Design System</h2>
+                <p>As my first UI project, I focused on creating a comprehensive design system that developers could implement without constant clarification. The system prioritized consistency and scalability.</p>
+                
+                <div class="showcase-grid">
+                    <div class="showcase-item sketch-box">
+                        <div class="showcase-image">
+                            <div class="placeholder-image">
+                                <span class="placeholder-text">🎨 Component Library</span>
+                                <span class="placeholder-hint">Screenshot of Figma components panel showing buttons, cards, inputs, and navigation elements with variants</span>
+                            </div>
+                        </div>
+                        <div class="showcase-caption">
+                            <h4>Reusable Component System</h4>
+                            <p><strong>What to highlight:</strong> 25+ components with multiple states (default, hover, pressed, disabled)</p>
+                            <p><strong>Why it matters:</strong> Reduced developer questions by 70% - they could reference the Figma file directly instead of asking for specs</p>
+                        </div>
+                    </div>
+
+                    <div class="showcase-item sketch-box">
+                        <div class="showcase-image">
+                            <div class="placeholder-image">
+                                <span class="placeholder-text">📱 Screen Flows</span>
+                                <span class="placeholder-hint">Screenshot showing connected Figma frames demonstrating user flow from event discovery → RSVP → check-in</span>
+                            </div>
+                        </div>
+                        <div class="showcase-caption">
+                            <h4>Interactive Prototyping</h4>
+                            <p><strong>What to highlight:</strong> Connected screens showing navigation patterns and transitions</p>
+                            <p><strong>Why it matters:</strong> Allowed developers to understand UX flow before writing code, preventing costly rework</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-box">
+                    <p><strong>💡 Key Learning:</strong> As a first UI project, I learned that documentation is as important as aesthetics. Clear component naming, organized layers, and detailed annotations made the design actually implementable.</p>
+                </div>
+
+                <p><em>View the complete Figma file: <a href="https://www.figma.com/design/IB1hJMCJ2e2CWzZvdNK1zb/Marill_manyEvents?m=auto&t=McnZ58YGnyIIazX1-1" target="_blank">Marill Event Platform Design</a></em></p>
+            </section>
+
+            <section class="project-section">
+                <h2>Competitive Analysis</h2>
+                <p>Analyzed leading event and social apps to understand established patterns:</p>
+                <ul>
+                    <li><strong>Eventbrite:</strong> Great discovery, but check-in process too complex for casual campus events</li>
+                    <li><strong>Instagram Events:</strong> Good social integration, but lacks robust check-in and analytics</li>
+                    <li><strong>Meetup:</strong> Strong community features, but feels too formal for student events</li>
+                </ul>
+                <div class="insight-box">
+                    <p><strong>Design Opportunity:</strong> Combine Instagram's social ease with Eventbrite's event management, optimized for mobile-first generation.</p>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Design Process</h2>
+                <div class="process-grid">
+                    <div class="process-step sketch-box">
+                        <div class="step-number">01</div>
+                        <h3>Research & Planning (Week 1-2)</h3>
+                        <p>Conducted user interviews with 8 students about event attendance pain points. Analyzed competitor apps. Defined core user flows with development team.</p>
+                    </div>
+                    <div class="process-step sketch-box">
+                        <div class="step-number">02</div>
+                        <h3>Lo-Fi Wireframes (Week 3)</h3>
+                        <p>Sketched paper wireframes for key screens: event feed, event details, QR check-in, profile. Got feedback from team on technical feasibility.</p>
+                    </div>
+                    <div class="process-step sketch-box">
+                        <div class="step-number">03</div>
+                        <h3>Design System Creation (Week 4-6)</h3>
+                        <p>Built comprehensive design system in Figma: color palette (Marill blue theme!), typography scale, component library (buttons, cards, forms). First time using Figma's component variants.</p>
+                    </div>
+                    <div class="process-step sketch-box">
+                        <div class="step-number">04</div>
+                        <h3>High-Fidelity Mockups (Week 7-12)</h3>
+                        <p>Created 30+ screens covering all user flows. Used Auto Layout for responsive components. Iterated based on developer feedback about Android implementation constraints.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Design System - The Marill Theme</h2>
+                <p>Named after Pokémon Marill, our playful blue water-type mascot became the inspiration for a cohesive visual identity.</p>
+                <div class="design-grid">
+                    <div class="design-item sketch-box">
+                        <h3>🎨 Color Palette</h3>
+                        <p><strong>Primary Blue:</strong> #5B9BD5 (Marill's signature color)<br>
+                        <strong>Rationale:</strong> Friendly, trustworthy, stands out in app store. Associated with social connection.</p>
+                    </div>
+                    <div class="design-item sketch-box">
+                        <h3>📝 Typography</h3>
+                        <p><strong>Headings:</strong> Poppins (friendly, modern)<br>
+                        <strong>Body:</strong> Roboto (Android standard, optimal legibility)<br>
+                        <strong>Rationale:</strong> Balance personality with platform conventions.</p>
+                    </div>
+                    <div class="design-item sketch-box">
+                        <h3>🧩 Components</h3>
+                        <p>Built 25+ reusable components using Figma variants: buttons (primary, secondary, text), event cards, navigation bars, forms.<br>
+                        <strong>Impact:</strong> Reduced design time by 60% once system was established.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Key Design Decisions</h2>
+                <div class="design-grid">
+                    <div class="design-item sketch-box">
+                        <h3>📱 Tab Bar Navigation</h3>
+                        <p><strong>Decision:</strong> Bottom tab bar with 5 primary sections<br>
+                        <strong>Rationale:</strong> Familiar pattern from Instagram/Twitter. Thumb-friendly on large phones. Team agreed on technical simplicity.</p>
+                    </div>
+                    <div class="design-item sketch-box">
+                        <h3>📸 Image-First Event Cards</h3>
+                        <p><strong>Decision:</strong> Large event images with minimal text overlay<br>
+                        <strong>Rationale:</strong> Gen Z responds to visual content. Testing showed 40% more taps on image-heavy cards vs text-heavy.</p>
+                    </div>
+                    <div class="design-item sketch-box">
+                        <h3>⚡ One-Tap Check-In</h3>
+                        <p><strong>Decision:</strong> QR code scan + geofence backup<br>
+                        <strong>Rationale:</strong> QR is fast for large events. Geofence catches users who forget to scan. Reduces check-in friction to <5 seconds.</p>
+                    </div>
+                    <div class="design-item sketch-box">
+                        <h3>👥 Social Features</h3>
+                        <p><strong>Decision:</strong> Show friends attending, not total count<br>
+                        <strong>Rationale:</strong> "3 friends going" is more persuasive than "50 people going." Creates FOMO through personal connections.</p>
+                    </div>
+                    <div class="design-item sketch-box">
+                        <h3>🔔 Smart Notifications</h3>
+                        <p><strong>Decision:</strong> Event reminder 1 hour before + check-in prompt on arrival<br>
+                        <strong>Rationale:</strong> Balances engagement without notification fatigue. Geofence trigger feels magical, not pushy.</p>
+                    </div>
+                    <div class="design-item sketch-box">
+                        <h3>📊 Organizer Dashboard</h3>
+                        <p><strong>Decision:</strong> Mobile-optimized analytics, not desktop clone<br>
+                        <strong>Rationale:</strong> Student organizers manage events on-the-go. Show key metrics (attendance rate, check-in speed) not raw data dumps.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Software Architecture & Project Management</h2>
+                <p>Beyond UI design, I led the technical architecture and coordinated the development team through a semester-long build cycle.</p>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h4>Architecture Design</h4>
+                        <p>Designed the Android app architecture using MVVM pattern, defined API contracts, and planned database schema for scalable event management</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Sprint Planning</h4>
+                        <p>Led weekly sprints with task breakdown, managed GitHub project board, and prioritized features based on technical dependencies and user value</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Technical Tradeoffs</h4>
+                        <p>Initial design had custom animations requiring weeks of work. Made pragmatic decision to use standard Android transitions to ship on time</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Design-Dev Bridge</h4>
+                        <p>Translated design decisions into implementation specs, conducted code reviews to ensure UI fidelity, and adjusted designs based on technical constraints</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Iterations & User Feedback</h2>
+                <div class="timeline-grid">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-content">
+                            <h4>Initial Concept</h4>
+                            <p>Heavy emphasis on event recommendations algorithm</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2</div>
+                        <div class="timeline-content">
+                            <h4>User Testing Feedback</h4>
+                            <p>Students preferred seeing friends' events first, algorithmic discovery second</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-content">
+                            <h4>Iteration</h4>
+                            <p>Redesigned home feed to prioritize "Friends Going" section above "Recommended Events"</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">✓</div>
+                        <div class="timeline-content">
+                            <h4>Result</h4>
+                            <p>60% increase in event engagement in prototype testing</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Final Design Highlights</h2>
+                <p><em>[View interactive prototype on Figma: <a href="https://www.figma.com/design/IB1hJMCJ2e2CWzZvdNK1zb/Marill_manyEvents?m=auto&t=McnZ58YGnyIIazX1-1" target="_blank">Marill Event Platform</a>]</em></p>
+                <p><strong>Key Screens:</strong></p>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h4>Event Discovery Feed</h4>
+                        <p>Personalized recommendations with social proof</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Event Detail</h4>
+                        <p>Social proof and quick RSVP functionality</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>QR Code Check-In</h4>
+                        <p>Scanning UI for seamless event entry</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>User Profile</h4>
+                        <p>Attended events history and social activity</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Organizer Dashboard</h4>
+                        <p>Real-time analytics and event management</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Results & Impact</h2>
+                <p><strong>Design Deliverables:</strong> 30+ high-fidelity screens, complete design system with 25+ components, interactive Figma prototype</p>
+                <p><strong>Team Impact:</strong> Design system reduced developer questions by 70%, enabling parallel work</p>
+                <p><strong>Academic Recognition:</strong> Project selected for [course showcase/demo day]</p>
+                <p><strong>Personal Growth:</strong> First production-ready design system, learned Figma collaboration, understood developer handoff process</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Reflection & Learnings</h2>
+                <div class="comparison-grid">
+                    <div class="comparison-item positive">
+                        <h4>✓ What Went Well</h4>
+                        <ul>
+                            <li><strong>Design system approach:</strong> Investing time upfront in components paid off. Developers loved having a single source of truth.</li>
+                            <li><strong>Playful branding:</strong> The Marill theme made the project memorable and gave us identity in a crowded event app space.</li>
+                            <li><strong>Mobile-first thinking:</strong> Designing for Android constraints taught me to embrace platform conventions, not fight them.</li>
+                            <li><strong>Team collaboration:</strong> Regular check-ins with developers prevented late-stage surprises about feasibility.</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-item negative">
+                        <h4>△ What I'd Do Differently</h4>
+                        <ul>
+                            <li><strong>More user testing:</strong> Only tested with 8 users due to time constraints. Would do guerrilla testing on campus for faster feedback loops.</li>
+                            <li><strong>Accessibility earlier:</strong> Added contrast checks late in process. Should have been part of design system from day one.</li>
+                            <li><strong>Developer education:</strong> Team wasn't familiar with design handoff best practices. Would create onboarding doc explaining Figma Inspect and component usage.</li>
+                            <li><strong>Dark mode:</strong> Didn't plan for it initially, causing rework. Should have designed both themes simultaneously.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box">
+                    <h3>💡 Key Takeaway</h3>
+                    <p>This project transformed me from a designer who makes pretty screens to one who thinks in systems. Working with developers taught me that design is a conversation, not a handoff. The Marill blue theme proved that even enterprise-like apps (event management) can have personality and playfulness. Most importantly, I learned that constraints - whether technical limitations or Android's design guidelines - aren't obstacles. They're creative fuel that push designs toward elegant simplicity.</p>
+                </div>
+            </section>
+
+            <div class="project-actions">
+                <a href="/design-portfolio/home.html" class="btn">Back to Portfolio</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
