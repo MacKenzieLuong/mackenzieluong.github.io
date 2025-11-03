@@ -37,10 +37,14 @@
             <section class="hero">
                 <div class="hero-text fade-in">
                     <h1 class="hero-heading">Hello! I'm Mack 👋</h1>
-                    <p class="hero-subheading">I'm a <span class="rotating-text">software developer</span> looking to contribute to something huge!</p>
+                    <p class="hero-subheading">I'm a <span class="rotating-text">software developer</span> who builds delightful digital experiences</p>
                     <p class="hero-description">
-                        I'm a Computing Science student at the University of Alberta, passionate about full stack development, game development, and UI/UX design.
+                        Computing Science student at UAlberta combining full-stack development, game design, and UI/UX to create products that users love.
                     </p>
+                    <div class="hero-cta">
+                        <a href="#featured-work" class="btn btn-primary">View My Work</a>
+                        <a href="/resources/resume-view.html" class="btn btn-secondary">Resume</a>
+                    </div>
                 </div>
                 <div class="model-container fade-in">
                     <!-- 3D Model will be rendered here -->
@@ -74,7 +78,71 @@
                 </div>
             </section>
 
+            <section id="featured-work" class="featured-section">
+                <h2 class="section-heading fade-in">Featured Projects</h2>
+                <p class="section-description fade-in">A selection of my favorite work across development and design</p>
+                
+                <div class="featured-grid fade-in">
+                    <!-- Featured Project 1: ratund Game Design -->
+                    <article class="featured-project sketch-box">
+                        <div class="featured-image">
+                            <img src="/images/ratund_cover.png" alt="ratund game design" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="featured-content">
+                            <h3 class="featured-title">ratund - Game Design</h3>
+                            <p class="featured-description">A chaotic rat-themed game created in 48 hours for Micro Jam 45. Led visual design, UI/UX, and 3D texturing to create a cohesive low-fi aesthetic that enhanced gameplay.</p>
+                            <div class="featured-tags">
+                                <span class="tag">Game Design</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">3D Texturing</span>
+                                <span class="tag">Procreate</span>
+                            </div>
+                            <a href="/design-portfolio/ratund.html" class="featured-link">View Design Process →</a>
+                        </div>
+                    </article>
+
+                    <!-- Featured Project 2: Leadership/Executive Producer -->
+                    <article class="featured-project sketch-box">
+                        <div class="featured-image">
+                            <img src="/images/onus_gameplay.png" alt="Onus Gold game mentored" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="featured-content">
+                            <h3 class="featured-title">Executive Producer</h3>
+                            <p class="featured-description">Mentoring a student-led team in game development course (CMPUT 250) using Unity, providing technical guidance and project management support. Leading students through the full Software Development Life Cycle while fostering an Agile environment. Responsible for quality control, milestone grading, and facilitating interdisciplinary collaboration.</p>
+                            <div class="featured-tags">
+                                <span class="tag">Leadership</span>
+                                <span class="tag">Project Management</span>
+                                <span class="tag">Team Coordination</span>
+                                <span class="tag">Agile</span>
+                            </div>
+                            <a href="/experience/home.html#executive-producer" class="featured-link">View Experience →</a>
+                        </div>
+                    </article>
+
+                    <!-- Featured Project 3: Project R -->
+                    <article class="featured-project sketch-box">
+                        <div class="featured-image">
+                            <img src="/images/projectr_frontpage.png" alt="Project R game" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="featured-content">
+                            <h3 class="featured-title">Project R</h3>
+                            <p class="featured-description">An interdisciplinary action-adventure game where I wore multiple hats: Producer managing the team and timeline, Artist creating character designs and UI, and Programmer implementing gameplay mechanics in Unity with C#.</p>
+                            <div class="featured-tags">
+                                <span class="tag">Unity</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">Project Management</span>
+                                <span class="tag">UI Design</span>
+                                <span class="tag">Character Art</span>
+                            </div>
+                            <a href="/software-dev/home.html#project-r" class="featured-link">View Project →</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
             <section class="contact-section">
+                <h2 class="section-heading fade-in">Let's Connect</h2>
+                <p class="section-description fade-in">I'm always open to discussing new opportunities, projects, or just chatting about tech and design</p>
                 <div class="contact-links fade-in">
                     <a href="mailto:mackenz3@ualberta.ca" class="contact-link sketch-box">
                         <span class="label">Email</span>
@@ -106,9 +174,10 @@
             'software developer',
             'project manager',
             'UX designer',
+            'board game enjoyer',
             'game developer',
             'full-stack developer',
-            'creative problem solver'
+            'rodent lover'
         ];
         
         let currentIndex = 0;
